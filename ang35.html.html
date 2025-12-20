@@ -1,0 +1,8 @@
+<ol>
+  @for(item of cars;track $index){
+    <li>{{$index}}:{{item}}</li>
+  }
+  @empty{
+    <p>No Cars Found</p>
+  }
+</ol>
