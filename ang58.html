@@ -1,0 +1,20 @@
+<form novalidate [formGroup]="loginForm">
+  <label>
+    Email:
+    <input  type="email"  name="email"  formControlName="email" required />
+  </label>
+
+  <br /><br />
+
+  <label>
+    Password:
+    <input  type="password"  name="pass"  formControlName="pass"  required />
+  </label>
+
+  <br /><br />
+
+  <p>Form Valid: {{ loginForm.valid }}</p>
+  <p>Form Status: {{ loginForm.status }}</p>
+</form>
+
+<router-outlet></router-outlet>
