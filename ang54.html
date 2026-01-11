@@ -1,0 +1,12 @@
+<table border="1">
+  <tr>
+    <th>Name</th>
+    <th>Type</th>
+    <th>Price</th>
+  </tr>
+  <tr ng-repeat="car in cars | orderBy:2:true">
+    <td>{{ car[0] }}</td>
+    <td>{{ car[1] }}</td>
+    <td>{{ car[2] }}</td>
+  </tr>
+</table>
